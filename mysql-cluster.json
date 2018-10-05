@@ -16,7 +16,7 @@
           "slave": "Master - Slave",
           "master": "Master - Master",
           "single": "MGR Single",
-          "multi": "MGR Multi",
+          "multi": "MGR Multi"
         }
       }
     ]
