@@ -2,7 +2,7 @@
     "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": true,
     "nodeGroupData": {
-        "scalingMode": "NEW"
+        "scalingMode": "stateless"
     },
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
@@ -32,16 +32,16 @@
         }]
     },
     "validation": {
-        "scalingMode": "NEW",
+        "scalingMode": "stateless",
         "rules": {
             "scheme": {
                 "master": {
                     "minCount": 2,
-                    "maxCount": 2
+                    "maxCount": 11
                 },
                 "slave": {
                     "minCount": 2,
-                    "maxCount": 2
+                    "maxCount": 11
                 },
                 "single": {
                     "minCount": 3,
