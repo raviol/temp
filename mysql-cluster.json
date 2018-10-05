@@ -6,15 +6,17 @@
   },
   "compatibleAddons": ["mysql-auto-cluster"],
   "settings": {
-    "data": { "scheme": "mm" },
+    "data": { "SCHEME": "master", "SCHEME": "slave", "SCHEME": "single", "SCHEME": "multi" },
     "fields": [
       {
         "type": "list",
         "caption": "Scheme",
         "name": "scheme",
         "values": {
-          "mm": "Master - Master",
-          "ms": "Master - Slave"
+          "slave": "Master - Slave",
+          "master": "Master - Master",
+          "single": "MGR Single",
+          "multi": "MGR Multi",
         }
       }
     ]
@@ -24,8 +26,8 @@
     "scalingMode": "NEW",
     "rules": {
       "scheme": {
-        "mm": {
-          "maxCount": 2
+        "slave": {
+          "maxCount": 11
         }
       }
     }
