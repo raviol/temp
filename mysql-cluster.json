@@ -1,5 +1,4 @@
 {
-  "type": "universal",
   "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
   "defaultState": true,
   "nodeGroupData": {
