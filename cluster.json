@@ -7,7 +7,7 @@
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
         "data": {
-            "scheme": "single"
+            "scheme": "slave"
         },
         "fields": [{
             "type": "list",
