@@ -2,7 +2,7 @@
     "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": true,
     "nodeGroupData": {
-        "scalingMode": "stateless"
+        "scalingMode": "STATELESS"
     },
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
@@ -33,7 +33,7 @@
         }]
     },
     "validation": {
-        "scalingMode": "stateless",
+        "scalingMode": "STATELESS",
         "rules": {
             "scheme": {
                 "master": {
