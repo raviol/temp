@@ -1,2 +1,5 @@
 type: update
 name: empty
+
+onInstall:
+  log: test
