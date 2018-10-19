@@ -29,6 +29,22 @@
                    "value": "single",
                    "caption": "Single MGR",
                    "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
+               }, {
+                   "value": "asdfasdfasd",
+                   "caption": "asdfasdfasd",
+                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
+               }, {
+                   "value": "qwerqwerqwerqwe",
+                   "caption": "qwerqwerqwerqwe",
+                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
+               }, {
+                   "value": "zxvczxcvzxcvzxc",
+                   "caption": "Szxvczxcvzxcvzxc",
+                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
+               }, {
+                   "value": "cvbncvbncvbn",
+                   "caption": "cvbncvbncvbn MGR",
+                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
                }
            ]
         }]
