@@ -9,7 +9,7 @@
     "settings": {
         "data": {
             "scheme": "slave",
-            "scheme2": "slave"
+            "scheme2": "master"
         },
         "fields": [{
             "type": "list",
