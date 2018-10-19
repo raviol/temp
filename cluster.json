@@ -47,9 +47,10 @@
                    "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
                }
            ]
-        },{"type": "list",
-            "caption": "Scheme",
-            "name": "scheme",
+        },{
+            "type": "list",
+            "caption": "Scheme2",
+            "name": "scheme2",
             "values": [{
                    "value": "master",
                    "caption": "Master - Master",
