@@ -1,15 +1,17 @@
 {
-    "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
+    "jps": "https://raw.githubusercontent.com/jelastic-jps/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": false,
+    "skipOnEnvInstall": true,
     "nodeGroupData": {
         "scalingMode": "STATELESS",
+        "isResetServicePassword": "NODE",
+        "skipNodeEmails": true,
         "isRedeploySupport": false
     },
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
         "data": {
-            "scheme": "slave",
-            "scheme2": "master"
+            "scheme": "slave"
         },
         "fields": [{
             "type": "list",
@@ -17,74 +19,23 @@
             "name": "scheme",
             "values": [{
                    "value": "master",
-                   "caption": "Master - Master",
-                   "tooltip": "Tip Master - Master"
+                   "caption": "Master-Master",
+                   "tooltip": "<h3>Master-Master with Extra Slaves</h3> <img width='314' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mysql/jelastic/images/tip-auto-clustering-mm.png'>"
                }, {
                    "value": "slave",
-                   "caption": "Master - Slave"
+                   "caption": "Master-Slave",
+                   "tooltip": "<h3>Master-Slave with Extra Slaves</h3> <img width='230' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mysql/jelastic/images/tip-auto-clustering-ms.png'>"
                }, {
                    "value": "multi",
                    "caption": "Multi MGR",
-                   "tooltip": "Mysql Group Replication cluster in Multi-Primary mode"
+                   "tooltip": "<h3>Multi-Primary Group Replication</h3>All servers can accept updates even if being issued concurrently. <img width='314' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mysql/jelastic/images/tip-auto-clustering-mg.png'>"
                }, {
                    "value": "single",
                    "caption": "Single MGR",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "asdfasdfasd",
-                   "caption": "asdfasdfasd",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "qwerqwerqwerqwe",
-                   "caption": "qwerqwerqwerqwe",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "zxvczxcvzxcvzxc",
-                   "caption": "Szxvczxcvzxcvzxc",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "cvbncvbncvbn",
-                   "caption": "cvbncvbncvbn MGR",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
+                   "tooltip": "<h3>Single Primary Group Replication</h3>Just one node (primary) can accept updates at a time and an automatic election is called upon its unavailability. <img width='286' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mysql/jelastic/images/tip-auto-clustering-sg.png'>"
                }
-           ]
-        },{
-            "type": "list",
-            "caption": "Scheme2",
-            "name": "scheme2",
-            "values": [{
-                   "value": "master",
-                   "caption": "Master - Master",
-                   "tooltip": "Tip Master - Master"
-               }, {
-                   "value": "slave",
-                   "caption": "Master - Slave"
-               }, {
-                   "value": "multi",
-                   "caption": "Multi MGR",
-                   "tooltip": "Mysql Group Replication cluster in Multi-Primary mode"
-               }, {
-                   "value": "single",
-                   "caption": "Single MGR",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "asdfasdfasd",
-                   "caption": "asdfasdfasd",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "qwerqwerqwerqwe",
-                   "caption": "qwerqwerqwerqwe",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "zxvczxcvzxcvzxc",
-                   "caption": "Szxvczxcvzxcvzxc",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }, {
-                   "value": "cvbncvbncvbn",
-                   "caption": "cvbncvbncvbn MGR",
-                   "tooltip": "Mysql Group Replication cluster in Single-Primary mode"
-               }
-           ]
+           ],
+           "tipParams": {"dismissDelay":600000,"anchor":"l","hideOnOver":false,"showDelay":0}
         }]
     },
     "validation": {
@@ -108,5 +59,5 @@
             }
         }
     },
-    "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>"
+    "description": "Automatic clusterization of the databases based on the chosen scheme with pre-configured replication and auto-discovery of the nodes."
 }
