@@ -39,7 +39,7 @@
         }]
     },
     "validation": {
-        "scalingMode": "STATELESS",
+        "scalingMode": "CLONE",
         "rules": {
             "scheme": {
                 "master": {
@@ -50,11 +50,11 @@
                 },
                 "single": {
                     "minCount": 3,
-                    "maxCount": 11
+                    "maxCount": 9
                 },
                 "multi": {
                     "minCount": 3,
-                    "maxCount": 11
+                    "maxCount": 9
                 }
             }
         }
