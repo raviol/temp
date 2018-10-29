@@ -1,9 +1,9 @@
 {
     "jps": "https://raw.githubusercontent.com/jelastic-jps/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": false,
-    "skipOnEnvInstall": false,
+    "skipOnEnvInstall": true,
     "nodeGroupData": {
-        "scalingMode": "STATELESS",
+        "scalingMode": "CLONE",
         "isResetServicePassword": "NODE",
         "skipNodeEmails": true,
         "isRedeploySupport": false
