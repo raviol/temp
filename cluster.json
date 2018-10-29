@@ -3,7 +3,7 @@
     "defaultState": true,
     "skipOnEnvInstall": true,
     "nodeGroupData": {
-        "scalingMode": "CLONE",
+        "scalingMode": "NEW",
         "isResetServicePassword": "NODE",
         "skipNodeEmails": true,
         "isRedeploySupport": false
@@ -39,7 +39,7 @@
         }]
     },
     "validation": {
-        "scalingMode": "CLONE",
+        "scalingMode": "NEW",
         "rules": {
             "scheme": {
                 "master": {
