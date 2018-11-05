@@ -41,7 +41,44 @@
       "type": "string",
       "caption": "string",
       "name": "customString"
-    }]
+    },{
+      "type": "string",
+      "caption": "string",
+      "hideLabel": false
+    },{
+      "type": "list",
+      "caption": "string",
+      "values": {
+        "value1": "hello",
+        "value2": "world"
+      },
+      "hideLabel": false,
+      "editable": true
+    },{
+      "type": "checkbox",
+      "caption": "string",
+      "value": true,
+      "hideLabel": false
+    },{
+      "type": "radiolist",
+      "caption": "Radio List",
+      "values": {
+        "value1": "hello",
+        "value2": "world"
+      },
+      "hideLabel": false
+    },{
+        "type": "dockertags",
+        "name": "tag",
+        "values": [
+          {
+            "name": "latest"
+          },
+          {
+            "name": "first"
+          }
+        ]
+      }]
     },
     "validation": {
         "scalingMode": "NEW",
