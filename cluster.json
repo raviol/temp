@@ -36,7 +36,12 @@
                }
            ],
            "tipParams": {"dismissDelay":600000,"anchor":"l","hideOnOver":false,"showDelay":0}
-        }]
+        },{
+      "hideLabel": false,
+      "type": "string",
+      "caption": "string",
+      "name": "customString"
+    }]
     },
     "validation": {
         "scalingMode": "NEW",
