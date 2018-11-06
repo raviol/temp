@@ -137,7 +137,7 @@
       ]
     },{
       "min": 0,
-      "max": 10,
+      "max": 100,
       "increment": 1,
       "useTips": true,
       "caption": "Slider",
