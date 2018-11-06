@@ -54,6 +54,45 @@
       },
       "hideLabel": false,
       "editable": true
+    },    {
+      "type": "checkbox",
+      "caption": "string",
+      "value": true,
+      "hideLabel": false
+    }, {
+      "type": "radiolist",
+      "caption": "Radio List",
+      "values": {
+        "value1": "hello",
+        "value2": "world"
+      },
+      "hideLabel": false
+    },{
+      "type": "radio-fieldset",
+      "name": "customName",
+      "default": "1",
+      "values": {
+        "1": "hello",
+        "2": "world"
+      },
+      "showIf": {
+        "1": [
+          {
+            "hideLabel": false,
+            "type": "string",
+            "caption": "First String",
+            "name": "first"
+          }
+        ],
+        "2": [
+          {
+            "hideLabel": false,
+            "type": "string",
+            "caption": "Second String",
+            "name": "second"
+          }
+        ]
+      }
     }]
     },
     "validation": {
