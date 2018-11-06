@@ -60,6 +60,7 @@
       "value": true,
       "hideLabel": false
     }, {
+      "name": "customName2",
       "type": "radiolist",
       "caption": "Radio List",
       "values": {
