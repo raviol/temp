@@ -144,6 +144,30 @@
       "caption": "Slider",
       "type": "slider",
       "name": "slider"
+    },{
+      "type": "spinner",
+      "name": "spinner",
+      "caption": "Spinner",
+      "min": 1,
+      "max": 10,
+      "increment": 2,
+      "decimalPrecision": ""
+    }, {
+      "type": "toggle",
+      "name": "toggle",
+      "caption": "Toggle",
+      "value": true
+    },{
+      "type": "hostpicker",
+      "name": "hostpicker",
+      "caption": "Hostpicker",
+      "editable": true,
+      "valueField": "host"
+    }, {
+      "caption": "Displayfield",
+      "type": "displayfield",
+      "name": "displayfield",
+      "markup": "display"
     }]
     },
     "validation": {
