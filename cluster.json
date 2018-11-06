@@ -42,8 +42,8 @@
       "caption": "string",
       "name": "customString"
     },{
-      "type": "string",
-      "caption": "string",
+      "type": "text",
+      "caption": "text",
       "hideLabel": false
     }]
     },
