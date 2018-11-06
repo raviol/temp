@@ -45,6 +45,15 @@
       "type": "text",
       "caption": "text",
       "hideLabel": false
+    },{
+      "type": "list",
+      "caption": "string",
+      "values": {
+        "value1": "hello",
+        "value2": "world"
+      },
+      "hideLabel": false,
+      "editable": true
     }]
     },
     "validation": {
