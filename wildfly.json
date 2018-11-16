@@ -1,5 +1,4 @@
 {
-  "convertible" : true,
   "jps"         : "https://raw.githubusercontent.com/jelastic-jps/wildfly/master/addons/auto-clustering/auto-cluster.jps",  
   "defaultState": false,
   "compatibleAddons": ["wildfly-cluster"],
