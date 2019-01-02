@@ -1,9 +1,12 @@
-
 {
-    "jps": "https://raw.githubusercontent.com/sych74/mysql-cluster-1/master/addons/auto-clustering/auto-cluster.jps",
-    "defaultState": true,
+    "jps": "https://raw.githubusercontent.com/raviol/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
+    "defaultState": false,
+    "skipOnEnvInstall": true,
     "nodeGroupData": {
-        "scalingMode": "STATELESS"
+        "scalingMode": "STATELESS",
+        "skipNodeEmails": true,
+        "isResetServicePassword": "NODE",
+        "isRedeploySupport": false
     },
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
@@ -16,17 +19,19 @@
             "name": "scheme",
             "values": [{
                    "value": "master",
-                   "caption": "Master - Master",
-                   "tooltip": "Tip Master - Master"
+                   "caption": "Master-Master",
+                   "tooltip": "<h3>Master-Master with Extra Slaves</h3>Pre-configured replication with two interconnected master databases. While horizontal scaling the cluster is extended with additional slave nodes. <img width='314' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mariadb/jelastic/images/tip-auto-clustering-mm.svg?sanitize=true'>"
                }, {
                    "value": "slave",
-                   "caption": "Master - Slave"
+                   "caption": "Master-Slave",
+                   "tooltip": "<h3>Master-Slave with Extra Slaves</h3>Pre-configured replication with one master and one slave database. While horizontal scaling the cluster is extended with additional slaves. <img width='314' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mariadb/jelastic/images/tip-auto-clustering-ms.svg?sanitize=true'>"
                }, {
                    "value": "galera",
                    "caption": "Galera",
-                   "tooltip": "Galera cluster"
+                   "tooltip": "<h3>Galera Cluster</h3>All servers can accept updates even if being issued concurrently. <img width='314' height='280' src='https://raw.githubusercontent.com/jelastic/icons/master/mariadb/jelastic/images/tip-auto-clustering-galera.svg?sanitize=true'>"
                }
-           ]
+           ],
+           "tipParams": {"dismissDelay":600000,"anchor":"l","hideOnOver":false,"showDelay":0,"text":"LT_Tip_Cluster_MariaDB_%(value)"}
         }]
     },
     "validation": {
@@ -34,19 +39,16 @@
         "rules": {
             "scheme": {
                 "master": {
-                    "minCount": 2,
-                    "maxCount": 11
+                    "minCount": 2
                 },
                 "slave": {
-                    "minCount": 2,
-                    "maxCount": 11
+                    "minCount": 2
                 },
                 "galera": {
-                    "minCount": 3,
-                    "maxCount": 11
+                    "minCount": 3
                 }
             }
         }
     },
-    "description": "<p>Ready-to-work scalable MySQL Cluster with master-slave asynchronous replication and ProxySQL load balancer in front of it. Is supplied with embedded Orchestrator GUI for convenient cluster management and provides even load distribution, slaves healthcheck and autodiscovery of newly added DB nodes</p>"
+    "description": "Automatic clusterization of the databases using the chosen scheme with pre-configured replication and auto-discovery of the nodes."
 }
