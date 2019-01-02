@@ -1,5 +1,5 @@
 {
-    "jps": "https://raw.githubusercontent.com/raviol/mysql-cluster/master/addons/auto-clustering/auto-cluster.jps",
+    "jps": "https://github.com/siruslan/mysql-cluster/blob/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": false,
     "skipOnEnvInstall": true,
     "nodeGroupData": {
