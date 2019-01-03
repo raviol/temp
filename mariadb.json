@@ -1,7 +1,7 @@
 {
     "jps": "https://github.com/siruslan/mysql-cluster/blob/master/addons/auto-clustering/auto-cluster.jps",
     "defaultState": false,
-    "skipOnEnvInstall": true,
+    "skipOnEnvInstall": false,
     "nodeGroupData": {
         "scalingMode": "STATELESS",
         "skipNodeEmails": true,
