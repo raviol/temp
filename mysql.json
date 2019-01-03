@@ -11,7 +11,9 @@
     "compatibleAddons": ["mysql-auto-cluster"],
     "settings": {
         "data": {
-            "scheme": "slave"
+            "scheme": "slave",
+            "db_user": "default_user",
+            "db_pass": "default_password6675166"
         },
         "fields": [{
             "type": "list",
