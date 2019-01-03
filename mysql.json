@@ -13,7 +13,7 @@
         "data": {
             "scheme": "slave",
             "db_user": "default_user",
-            "db_pass": "default_password6675166"
+            "db_pass": "default_password"
         },
         "fields": [{
             "type": "list",
