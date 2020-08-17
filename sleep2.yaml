@@ -1,5 +1,5 @@
 type: update
-name: Task1
+name: Task2
 
 onInstall:
   - log: Start
