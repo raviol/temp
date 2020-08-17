@@ -1,5 +1,5 @@
 type: update
-name: timeout
+name: Task1
 
 onInstall:
   - log: Start
