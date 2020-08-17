@@ -1,0 +1,7 @@
+type: update
+name: Task1
+
+onInstall:
+  - log: Start
+  - sleep: 10000
+  - log: Finish
