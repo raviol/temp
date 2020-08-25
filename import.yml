@@ -1,0 +1,6 @@
+type: update
+name: import
+
+onInstall:
+  cmd [cp]:
+    - date
