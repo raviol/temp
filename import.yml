@@ -2,5 +2,4 @@ type: update
 name: import
 
 onInstall:
-  cmd [cp]:
-    - date
+  - cmd[cp]: free -m | sed -n '2p' | awk '{printf "%.f", $2 * 0.7}'
