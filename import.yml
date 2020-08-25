@@ -2,7 +2,19 @@ type: install
 name: import
 
 nodes:
-  - nodeType: apache
+  - cloudlets: 22
+    nodeGroup: cp
+    image: atlassian/jira-software:${settings.jira_version}
+    env:
+      ATL_JDBC_USER: ${globals.dbUser}
+      ATL_JDBC_PASSWORD: ${globals.dbPasswd}
+      ATL_DB_DRIVER: org.postgresql.Driver
+      ATL_DB_TYPE: postgres72    
+      ATL_DB_SCHEMA_NAME: public
+      ATL_JDBC_URL: jdbc:postgresql://sqldb/${globals.dbName}
+      ATL_PROXY_PORT: ${globals.proxyPort}
+      ATL_TOMCAT_SCHEME: https
+      ATL_TOMCAT_SECURE: true
 
 onInstall:
   - cmd[cp]: free -m | sed -n '2p' | awk '{printf "%.f", $2 * 0.7}'
