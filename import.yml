@@ -2,7 +2,7 @@ type: install
 name: import
 
 nodes:
-  - apache
+  - nodeType: apache
     cloudlets: 8
 
 onInstall:
